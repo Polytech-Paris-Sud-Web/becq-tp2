@@ -1,0 +1,9 @@
+.article {
+  width: 90vw;
+  border: 1px darkblue solid;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

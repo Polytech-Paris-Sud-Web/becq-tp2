@@ -1,0 +1,9 @@
+<div class="article">
+  <h3> {{this.article?.title || '404 article not found'}} </h3>
+  <p> {{this.article?.content}} </p>
+  <p style="font-style: italic">
+    <a routerLink="/author/{{this.article?.author}}" class="route">Author: {{this.article?.author}}</a>
+    , {{this.article?.date}}
+  </p>
+  <button type="button" (click)="delete(this.article?.id || -1)" disabled="{{!this.article}}">Delete</button>
+</div>

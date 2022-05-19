@@ -1,0 +1,46 @@
+{
+  "articles": [
+    {
+      "title": "Angular component",
+      "content": "Angular component looks awesome!",
+      "author": "Orangefire",
+      "date": "Wed May 18 2022 10:25:09 GMT+0200 (Central European Summer Time)",
+      "id": 2
+    },
+    {
+      "title": "Fake Title",
+      "content": "JOOOOOOOOOOOOE MAMA",
+      "author": "IS ME LEANDRE FEAT REMY",
+      "date": "Wed May 18 2022 10:05:09 GMT+0200 (Central European Summer Time)",
+      "id": 4
+    },
+    {
+      "title": "zzzzzzzzzzFake Title",
+      "content": "jjjjjjjjj",
+      "author": "zzzzzzz",
+      "date": "Wed May 18 2022 09:55:09 GMT+0200 (Central European Summer Time)",
+      "id": 5
+    },
+    {
+      "title": "we need articlessssss",
+      "content": "aaaaaa",
+      "author": "leandre",
+      "date": "Wed May 18 2022 11:04:48 GMT+0200 (Central European Summer Time)",
+      "id": 13
+    }
+  ],
+  "authors": [
+    {
+      "name": "leandre",
+      "descripttion": "he is very handsome and has always something on his mind :flushed_emoji:"
+    },
+    {
+      "name": "kkkkkkkkkkkkk",
+      "description": "dont ask questions you when you dont want the answers"
+    },
+    {
+      "name": "Orangefire",
+      "description": "behold"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<div class="article">
+  <a routerLink="/article/{{this.id}}" class="route">{{this.title}}</a>
+  <p style="font-style: italic">
+    {{this.date}}
+  </p>
+  <button type="button" (click)="delete()">Delete</button>
+</div>

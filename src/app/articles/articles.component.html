@@ -1,0 +1,13 @@
+<div class="searchBar">
+  Search:
+  <input type="text" #filtersInput (keyup)="filter(filtersInput.value)">
+</div>
+<app-article-header
+  *ngFor="let article of this.displayArticles"
+  [title]="article.title"
+  [content]="article.content"
+  [id]="article.id"
+  [date]="article.date.substring(0, 24)"
+  (deleteRequest)="delete($event)"
+>
+</app-article-header>

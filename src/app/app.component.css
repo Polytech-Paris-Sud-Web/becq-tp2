@@ -1,0 +1,16 @@
+.toolbar {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.route {
+  padding: 20px;
+  width: 70%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.route:hover {
+  background-color: azure;
+}
