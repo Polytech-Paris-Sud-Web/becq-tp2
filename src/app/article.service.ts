@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
+import {environment} from "../environments/environment";
 
 export interface Article {
   title: string,
@@ -17,18 +18,18 @@ export class ArticleService {
   }
 
   public getArticles(): Observable<Article[]> {
-    return this.http.get<Article[]>("http://localhost:3000/articles");
+    return this.http.get<Article[]>(environment.bddPath + "articles");
   }
 
   public deleteArticle(id: number) {
-    return this.http.delete(`http://localhost:3000/articles/${id}`) ;
+    return this.http.delete(environment.bddPath + `articles/${id}`) ;
   }
 
   public createArticle(article: { title: string; content: string; author: string; }) {
-    return this.http.post(`http://localhost:3000/articles/`, {...article, date: Date()})
+    return this.http.post(environment.bddPath + `articles/`, {...article, date: Date()})
   }
 
   public getArticle(id: number) : Observable<Article> {
-    return this.http.get<Article>(`http://localhost:3000/articles/${id}`);
+    return this.http.get<Article>(environment.bddPath + `articles/${id}`);
   }
 }
