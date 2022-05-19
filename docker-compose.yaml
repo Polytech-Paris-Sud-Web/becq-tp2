@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  web:
+    image: "tomansion/webav-leandre"
+    labels:
+      - traefik.frontend.rule=Host:webav-leandre.tomansion.fr
+      - traefik.port=8080
+    container_name: webav-leandre
+  bdd:
+    image: "tomansion/webav-db-leandre"
+    labels:
+      - traefik.frontend.rule=Host:webav-db-leandre.tomansion.fr
+      - traefik.port=3000
+    container_name: webav-db-leandre
+
+networks:
+  default:
+    external: true
+    name: proxy
