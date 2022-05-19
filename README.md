@@ -11,6 +11,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 Run `json-server --watch db.json`
 
 
+## [Website](https://webav-leandre.tomansion.fr/)
+Thanks to tomansion !   
+
+![cd](https://github.com/Polytech-Paris-Sud-Web/becq-tp2/actions/workflows/deploy.yml/badge.svg)  
+
+
 ## People that helped me through this project
 And thanks to the horsemen of the apocalypse !  
 They helped me on many subjects :
